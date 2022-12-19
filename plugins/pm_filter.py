@@ -417,8 +417,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-        ], [
-            InlineKeyboardButton('🔰 ՏϴႮᎡᏟᎬ 🔰', cllaback_data='source')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -713,7 +711,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n😌 ᴠᴀɴᴀᴋᴋᴀᴍ ᴅᴀ ᴍᴀᴘʟᴀ😅... {search} ᴍᴏᴠɪᴇ ᴋᴇᴇʟᴀ ɪʀᴜᴋᴋᴜ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀɴɴɪᴋᴏ✨ \n\nᴏᴡɴᴇʀ ɪɴᴛʜᴀ ᴘᴀɪʏᴀɴ ᴛʜᴀ : @IMV_VENKAT"
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\nᴠᴀɴᴀᴋᴋᴀᴍ ᴅᴀ ᴍᴀᴘʟᴀ😅... \n\nᴜsᴇʀ : {u.mention} \n\nᴏᴡɴᴇʀ : @IMV_VENKAT \n\nᴜɴɢᴀ {search} ᴍᴏᴠɪᴇ ᴋᴇᴇʟᴀ ɪʀᴜᴋᴋᴜ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀɴɴɪᴋᴏɴɢᴀ✨"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
