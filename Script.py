@@ -17,13 +17,13 @@ class script(object):
 <i>Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ</i>''')
     HELP_TXT = """𝙷𝙴𝚈 {}
 ᴠᴀᴀᴅɪ ᴠᴀᴀ ɴɪ ɪɴɢᴀ ᴛʜᴀ ᴠᴀʀᴜᴠᴀɴᴜ ᴇɴᴀᴋᴜ ᴛʜᴇʀɪʏᴜᴍ 🤭."""
-    ABOUT_TXT = """<b><i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/spideyimv_bot><b>Spidey bot</b></a>\n
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/IMV_VENKAT><b>IMV_VENKAT</b></a>\n
+    ABOUT_TXT = """<b><i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/spideyimv_bot><b>sᴘɪᴅᴇʏ</b></a>\n
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/IMV_VENKAT><b>ɪᴍꪜ</b></a>\n
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ\n
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3\n
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : ᴋᴏʏᴇʙ\n
 📂 ᴅᴀᴛᴀʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ\n
-🔗 ᴜʀʟ sʜᴏʀᴛɴᴇʀ : <a herf=https://du-link.in/ref/105682242054420989670><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
+🔗 ᴜʀʟ sʜᴏʀᴛɴᴇʀ : ᴅᴜʟɪɴᴋ\n
 📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/Tamil_Movies_IMV><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
 🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0\n</b></i>"""
     SOURCE_TXT = """<b><i>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>\n\n
