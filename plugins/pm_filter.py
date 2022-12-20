@@ -711,7 +711,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\nᴠᴀɴᴀᴋᴋᴀᴍ ᴅᴀ ᴍᴀᴘʟᴀ😅... \n\nʀᴇϙᴜᴇsᴛᴇʀ : {} \n\nᴏᴡɴᴇʀ : @IMV_VENKAT \n\nᴜɴɢᴀ {search} ᴍᴏᴠɪᴇ ᴋᴇᴇʟᴀ ɪʀᴜᴋᴋᴜ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀɴɴɪᴋᴏɴɢᴀ✨"
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\nᴠᴀɴᴀᴋᴋᴀᴍ ᴅᴀ ᴍᴀᴘʟᴀ😅... \n\nʀᴇϙᴜᴇsᴛᴇʀ : <code>{user_id}<\code>\n\nᴏᴡɴᴇʀ : @IMV_VENKAT \n\nᴜɴɢᴀ {search} ᴍᴏᴠɪᴇ ᴋᴇᴇʟᴀ ɪʀᴜᴋᴋᴜ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀɴɴɪᴋᴏɴɢᴀ✨"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
