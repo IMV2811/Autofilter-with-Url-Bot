@@ -56,7 +56,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("Vaaipilla Raja😅", show_alert=True)
+        return await query.answer("Vaaipilla Raja😅 ᴛʜɪʀᴜᴍʙᴀ sᴇᴀʀᴄʜ ᴘᴀɴɴᴜ...❣️  ", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -665,7 +665,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n😌 ᴠᴀɴᴀᴋᴋᴀᴍ ᴅᴀ ᴍᴀᴘʟᴀ😅... {search} ᴍᴏᴠɪᴇ ᴋᴇᴇʟᴀ ɪʀᴜᴋᴋᴜ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀɴɴɪᴋᴏ✨ \n\nᴏᴡɴᴇʀ ɪɴᴛʜᴀ ᴘᴀɪʏᴀɴ ᴛʜᴀ : @IMV_VENKAT"
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n😌 ᴠᴀɴᴀᴋᴋᴀᴍ ᴅᴀ ᴍᴀᴘʟᴀ😅... {search} ᴍᴏᴠɪᴇ ᴋᴇᴇʟᴀ ɪʀᴜᴋᴋᴜ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀɴɴɪᴋᴏ✨ \n\nᴏᴡɴᴇʀ : @IMV_VENKAT"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
