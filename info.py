@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '22171124'))
+API_HASH = environ.get('API_HASH', 'f978c9791d0d51b6f472d452da048e26'')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5766558779:AAFDQTobYwcVJrTukP6p984H4KMVR3D7ocw")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -22,32 +22,32 @@ PORT = environ.get("PORT", "8080")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/b806ad314d0c415571bde.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/e6340d6140160691fe177.jpg https://te.legra.ph/file/8b5e7bb9acd044da86d82.jpg https://te.legra.ph/file/15fc9446bfde912276e7d.jpg https://te.legra.ph/file/70fdaf020986a93658ee4.jpg https://te.legra.ph/file/9b683efc32f63f5e1c096.jpg https://te.legra.ph/file/60f55d242c00645229ca0.jpg https://te.legra.ph/file/93b4e46aa229b966ff2d5.jpg https://te.legra.ph/file/f64ff1672dc80ce365d7f.jpg https://te.legra.ph/file/46d6f6c4389c682d488c7.jpg https://te.legra.ph/file/2facbcd137cb953d8c8f0.jpg https://te.legra.ph/file/f0af4bef004b25150371b.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2001653136').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5425148509 1385308802').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '2001653136').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5425148509 1385308802').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001852381913')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Venkat:imv2811@cluster0.elufftz.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001526838987'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'search_zone_support')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [GreyMatter's Bot](https://t.me/greymatter_bots)</b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [GreyMatter's Bot](https://t.me/greymatter_bots)</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ : {runtime} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n🔖 sʜᴏʀᴛ : {plot} \n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @GreyMatter_Bots")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [Tamil_Movies_IMV](https://t.me/Tamil_Movies_IMV)</b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [Tamil_Movies_IMV](https://t.me/Tamil_Movies_IMV)</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ : {runtime} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n🔖 sʜᴏʀᴛ : {plot} \n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @IMV_VENKAT")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -71,14 +71,14 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'Clicksfly.com')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'dulink.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'fd3e13584c65bddc19749a448a81e1c43fd72f24')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
 SELF_DELETE = environ.get('SELF_DELETE', True)
-if SELF_DELETE == "True":
-    SELF_DELETE = True
+if SELF_DELETE == "False":
+    SELF_DELETE = False
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
